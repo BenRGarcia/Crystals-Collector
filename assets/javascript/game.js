@@ -56,3 +56,82 @@
  * 
  */
 //
+
+//===========
+// Model
+//===========
+class Crystal {
+  // parent class for crystal objects
+  /*
+   * 1) method for random # between 1-12
+   * 2) property/value ex.: points: 1,
+   * 
+   * 
+   */
+}
+
+// instantiate crystal objects
+const crystal1 = new Crystal();
+const crystal2 = new Crystal();
+const crystal3 = new Crystal();
+const crystal4 = new Crystal();
+
+
+// properties of the game
+const gameProps = {
+  _playerScore: 0,
+  winCount: 0,
+  lossCount: 0,
+  randomNumber: 0,
+
+  set playerScore(points) {
+    this._playerScore += points;
+  },
+
+  get playerScore() {
+    return this._playerScore;
+  },
+
+  generateRandomNumber() {
+    // between 19-120
+    let number = Math.floor((Math.random() * 102) + 19);
+    this.randomNumber = number;
+  },
+
+  incrementWinCount() {
+    this.winCount++;
+  },
+
+  incrementLossCount() {
+    this.lossCount++;
+  },
+
+  didUserWin() {
+    if (this._playerScore === randomNumber) return true;
+    else return false;
+  },
+
+  didUserLose() {
+    if (this._playerScore > randomNumber) return true;
+    else return false;
+  },
+
+  startNewRound() {
+    this._playerScore = 0;
+    this.generateRandomNumber();
+  }
+};
+
+
+//===========
+// View 
+//===========
+
+
+
+
+
+//===========
+// Controller
+//===========
+
