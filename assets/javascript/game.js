@@ -61,6 +61,10 @@
 // Model
 //===========
 class Crystal {
+  constructor() {
+    this._pointValue = Math.floor((Math.random() * 12) + 1);
+  }
+  
   // parent class for crystal objects
   /*
    * 1) method for random # between 1-12
@@ -85,7 +89,11 @@ const gameProps = {
   randomNumber: 0,
 
   set playerScore(points) {
-    this._playerScore += points;
+    if (typeof points === 'number') {
+      this._playerScore += points;
+    } else {
+      console.log(`Invalid argument. '${points}' is not a number`);
+    }
   },
 
   get playerScore() {
