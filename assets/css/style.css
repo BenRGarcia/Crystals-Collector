@@ -4,3 +4,33 @@ body {
   background: url('../images/tree_bark.png');
   font-family: 'Annie Use Your Telescope', cursive;
 }
+
+.title {
+  font-size: 4rem;
+}
+
+.sub-title {
+  font-size: 3rem;
+}
+
+.max-height {
+  max-height: 150px;
+}
+
+img:hover {
+  opacity: .8;
+}
+
+img:active {
+  opacity: .6;
+}
+
+.bg-style {
+  background-color: rgba(120,120,120,.4);
+  border: 1px dashed #000;
+}
+
+.description-box {
+  font-size: 1.3rem;
+  border: 2px dotted #000;
+}
