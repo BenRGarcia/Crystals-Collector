@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope');
+
+body {
+  background: url('../images/tree_bark.png');
+  font-family: 'Annie Use Your Telescope', cursive;
+}
