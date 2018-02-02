@@ -1,6 +1,8 @@
 //===========
 // Model
 //===========
+
+// Parent class to instantiate 4 'crystal#' objects
 class Crystal {
 
   constructor() {
@@ -17,7 +19,7 @@ class Crystal {
   }
 }
 
-// Properties of the game
+// Parent class to instantiate game object
 class Game {
 
   constructor() {
@@ -69,7 +71,6 @@ class Game {
   }
 }
 
-
 // Instantiate crystal objects
 const crystal1 = new Crystal();
 const crystal2 = new Crystal();
@@ -78,7 +79,6 @@ const crystal4 = new Crystal();
 
 // Instantiate game object
 const crystalGameProps = new Game();
-
 
 //===========
 // View 
@@ -119,6 +119,28 @@ const DOM = {
 const gameEngine = {
 
   controller(crystalClicked) {
+
+    if (/*crystal1 was clicked*/) {
+      // add point value of crystal1 to score
+    }
+
+    if (/*crystal1 was clicked*/) {
+      // add point value of crystal1 to score
+    }
+
+    if (/*crystal1 was clicked*/) {
+      // add point value of crystal1 to score
+    }
+
+    if (/*crystal1 was clicked*/) {
+      // add point value of crystal1 to score
+    }
+
+    // test if user lost
+      // if yes, alert user to lost round, increment loss and start new round
+
+    // test if user won
+      // if yes, alert user to win, increment win and start new round
 
   }
 };
