@@ -62,16 +62,18 @@
 //===========
 class Crystal {
   constructor() {
-    this._pointValue = Math.floor((Math.random() * 12) + 1);
+    this._pointValue;
+    newPointValue();
   }
   
-  // parent class for crystal objects
-  /*
-   * 1) method for random # between 1-12
-   * 2) property/value ex.: points: 1,
-   * 
-   * 
-   */
+  get pointValue() {
+    return this._pointValue;
+  }
+
+  newPointValue() {
+    // Between 1-12
+    this._pointValue = Math.floor((Math.random() * 12) + 1);
+  }
 }
 
 // instantiate crystal objects
@@ -143,3 +145,22 @@ const gameProps = {
 // Controller
 //===========
 
+$(document).ready( () => {
+
+  $("js-crystal-1").on('click', () => {
+    // do a thing
+  });
+
+  $("js-crystal-2").on('click', () => {
+    // do a thing
+  });
+
+  $("js-crystal-3").on('click', () => {
+    // do a thing
+  });
+
+  $("js-crystal-4").on('click', () => {
+    // do a thing
+  });
+
+});
