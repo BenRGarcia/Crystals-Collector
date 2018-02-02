@@ -103,8 +103,7 @@ const gameProps = {
   },
 
   generateRandomNumber() {
-    // between 19-120
-    let number = Math.floor((Math.random() * 102) + 19);
+    let number = Math.floor((Math.random() * 102) + 19); // between 19-120
     this.randomNumber = number;
   },
 
@@ -139,20 +138,25 @@ const gameProps = {
 
 const DOM = {
   render(component) {
-    
+
     switch (component) {
+
       case 'score':
-        // jQuery render: user's score
+        $("#js-score").text(gameProps.playerScore);
         break;
+
       case 'winCount':
-        // jQuery render: win count
+        $("#js-win-count").text(gameProps.winCount);
         break;
+
       case 'lossCount':
-        // jQuery render: loss count
+        $("#js-loss-count").text(gameProps.lossCount);
         break;
+
       case 'randomNumber':
-        // jQuery render: random number
+        $("#js-random-number").text(gameProps.randomNumber);
         break;
+
       default:
         console.log(`Error: ${component} did not render to DOM.`);
         break;
