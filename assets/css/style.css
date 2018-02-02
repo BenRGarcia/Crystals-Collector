@@ -17,6 +17,10 @@ body {
   max-height: 150px;
 }
 
+.static-height {
+  height: 139px;
+}
+
 img:hover {
   opacity: .7;
 }
