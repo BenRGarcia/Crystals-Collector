@@ -149,18 +149,21 @@ $(document).ready( () => {
 
   $("js-crystal-1").on('click', () => {
     // do a thing
+    // call a function, pass object: crystal1.pointValue 
   });
 
   $("js-crystal-2").on('click', () => {
     // do a thing
+    // call a function, pass object: crystal2.pointValue
   });
 
   $("js-crystal-3").on('click', () => {
     // do a thing
+    // call a function, pass object: crystal3.pointValue
   });
 
   $("js-crystal-4").on('click', () => {
     // do a thing
+    // call a function, pass object: crystal4.pointValue
   });
-
 });
