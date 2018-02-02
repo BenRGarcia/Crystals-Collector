@@ -137,6 +137,28 @@ const gameProps = {
 // View 
 //===========
 
+const DOM = {
+  render(component) {
+    
+    switch (component) {
+      case 'score':
+        // jQuery render: user's score
+        break;
+      case 'winCount':
+        // jQuery render: win count
+        break;
+      case 'lossCount':
+        // jQuery render: loss count
+        break;
+      case 'randomNumber':
+        // jQuery render: random number
+        break;
+      default:
+        console.log(`Error: ${component} did not render to DOM.`);
+        break;
+    }
+  }
+};
 
 
 
