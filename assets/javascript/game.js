@@ -171,25 +171,29 @@ const DOM = {
 // Controller
 //===========
 
+const gameEngine = {
+
+  controller(crystalClicked) {
+
+  }
+};
+
 $(document).ready( () => {
 
-  $("js-crystal-1").on('click', () => {
-    // do a thing
-    // call a function, pass object: crystal1.pointValue 
+  $("#js-crystal-1").on('click', () => {
+    gameEngine.controller("crystal1");
   });
 
-  $("js-crystal-2").on('click', () => {
-    // do a thing
-    // call a function, pass object: crystal2.pointValue
+  $("#js-crystal-2").on('click', () => {
+    gameEngine.controller("crystal2");
   });
 
-  $("js-crystal-3").on('click', () => {
-    // do a thing
-    // call a function, pass object: crystal3.pointValue
+  $("#js-crystal-3").on('click', () => {
+    gameEngine.controller("crystal3");
   });
 
-  $("js-crystal-4").on('click', () => {
-    // do a thing
-    // call a function, pass object: crystal4.pointValue
+  $("#js-crystal-4").on('click', () => {
+    gameEngine.controller("crystal4");
+
   });
 });
